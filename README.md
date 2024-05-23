@@ -1,6 +1,10 @@
 # ChessGame
 
-## Plataforma para jugar al ajedrez online (React + JS + PHP)
+## Plataforma para jugar al ajedrez por correspondencia (React + JS + PHP)
+
+<div style="text-align: center;">
+![Pantalla de Inicio](src/assets/inicio.png)
+</div>
 
 Para hacer uso de la VERSIÓN DEMO es necesario activar en:
 
@@ -13,9 +17,13 @@ Edge:
 
 **VERSIÓN DEMO:** --> [ChessGame](https://chessg4me.000webhostapp.com) <--
 
+<div style="text-align: center;">
+![Partida](src/assets/partida.png)
+</div>
+
 Para iniciar el proyecto en local es necesario:
 
-Importar chessdb.sql
+Importar la base de datos --> chessdb.sql
 
 <ul>
   <li>npm install</li>
@@ -27,8 +35,6 @@ Importar chessdb.sql
   <li>npm install @material-ui/icons --force</li>
 </ul>
 
-**Nota:** Modificar get_connection() para que apunte a tu base de datos (user,pass,params,etc) en el api.php y las rutas en Services/ApiService.js
-
-![Pantalla de Inicio](src/assets/inicio.jpg)
+**Importante:** Modificar get_connection() para que apunte a tu base de datos (user,pass,params,etc) en el api.php y las rutas en src/services/ApiService.js
 
 Leer el manual de usuario para el uso correcto de la aplicación. Si tiene alguna pregunta o sugerencia sobre la aplicación, pongase en contacto conmigo en la siguiente dirección de correo electrónico: micckey1198@gmail.com
