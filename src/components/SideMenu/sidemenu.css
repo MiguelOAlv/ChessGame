@@ -1,0 +1,109 @@
+#sidebar {
+  width: 250px;
+  position: fixed;
+  top: 0;
+  left: 0;
+  background-color: rgba(2, 2, 2, 0.5);
+  overflow-x: hidden;
+  transition: 0.5s;
+  padding-top: 60px;
+  z-index: 998;
+  height: 100vh;
+}
+
+#sidebar.active {
+  width: 0;
+}
+
+.sidebar-header {
+  padding: 20px;
+  text-align: center;
+}
+
+.sidebar-header h3 {
+  color: white;
+}
+
+.toggleButton.btnSideMenu {
+  position: fixed;
+  top: 0px;
+  left: 0px;
+  z-index: 999;
+  background-color: transparent;
+  border: none;
+  color: white;
+  font-size: 1.5rem;
+  width:75px;
+  visibility: hidden;
+}
+
+.toggleButton.btnSideMenu:active{
+  background-color: #030303;
+}
+.avatar-container {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 20px;
+}
+
+.avatar-img {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+.list-unstyled {
+  padding: 0;
+  list-style-type: none;
+}
+
+.list-unstyled li {
+  padding: 20px;
+  text-align: center;
+}
+
+.list-unstyled li a {
+  color: white;
+  text-decoration: none;
+  display: block;
+}
+
+.list-unstyled li:hover {
+  background-color: rgba(255, 255, 255, 0.1);
+  transition:0.3s;
+}
+
+.modal-content{
+  color: white;
+  text-align: center;
+}
+.error{
+    margin-bottom: 10px;
+    left: 10px;
+    color: red;
+  }
+ 
+  ::-webkit-scrollbar{
+    width:15px;
+    border-radius:10px;
+    background: rgba(2, 2, 2, 0.8);
+  }
+  ::-webkit-scrollbar-thumb{
+    background: rgba(99, 99, 99, 1);
+    border-radius:10px;
+  }
+  @media (max-width: 767px) {
+  .toggleButton.btnSideMenu {
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    background-color: transparent;
+    z-index: 999;
+    width:75px;
+    visibility: visible;
+  }
+  #sidebar {
+    background-color: #000000;
+  }
+}

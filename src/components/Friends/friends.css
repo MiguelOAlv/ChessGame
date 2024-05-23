@@ -1,0 +1,265 @@
+.formContainer {
+  display: flex;
+  align-items: center;
+  margin-bottom: 1rem;
+  grid-column: 1 / span 2;
+  height: 65px;
+}
+
+.input {
+  margin-right: 0.5rem;
+  height: 45px;
+  border-radius: 0.5rem;
+  flex: 1;
+}
+
+.button {
+  background-color: rgba(68, 68, 68, 0.8);
+  color: #fff;
+  border: none;
+  border-radius: 0.5rem;
+  padding: 0.5rem;
+  cursor: pointer;
+}
+
+.resultList {
+  list-style: none;
+  padding: 0;
+  margin-top: 0;
+  max-height: calc(100vh - 280px);
+  min-width:min-content;
+  overflow:auto;
+}
+.resultList::-webkit-scrollbar{
+  width:15px;
+  border-radius:10px;
+  background: rgba(2, 2, 2, 0.8);
+}
+.resultList::-webkit-scrollbar-thumb{
+  background: rgba(99, 99, 99, 1);
+  border-radius:10px;
+}
+.resultItem {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 0.5rem;
+  padding: 1rem;
+  border: 2px solid #ffffff;
+  border-radius: 5px;
+  backdrop-filter: blur(3px);
+}
+
+.userInfo {
+  display: flex;
+  align-items: center;
+}
+
+.userAvatar {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  margin-right: 0.5rem;
+  background-color: #ccc;
+}
+
+.nombreAmigo {
+  color: white;
+  padding: 0.5rem;
+}
+
+.listaAmigosTitle {
+  margin-bottom: 1rem;
+  font-weight: bold;
+  color: #ccc;
+  font-size: 30px;
+  height: 65px;
+  text-align: center;
+}
+
+.errorMessage {
+  text-align: center;
+  color: red;
+}
+.errorMessageModal{
+  margin-top:10px;
+  text-align:center;
+  color:red;
+}
+.infoMessage {
+  text-align: center;
+  color: green;
+}
+.infoModal{
+  margin-top:10px;
+  text-align:center;
+  color:green;
+}
+.button-borrar{
+  color: red;
+  margin-left:10px;
+}
+.button-borrar:hover{
+  transition: 0.5s;
+  background-color: rgba(255, 0, 0, 0.555);
+}
+.button-retar{
+  color: orange;
+}
+.button-retar:hover{
+  transition: 0.5s;
+  background-color: rgba(255, 166, 0, 0.555);
+}
+.button-check {
+  color: green;
+  width:50px;
+}
+.button-check:hover {
+  transition: 0.5s;
+  background-color: rgba(0, 128, 0, 0.555);
+}
+.button-cross {
+  color: red;
+  width:50px;
+  margin-left:10px;
+}
+.button-cross:hover {
+  transition: 0.5s;
+  background-color: rgba(255, 0, 0, 0.555);
+}
+.modal {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: rgba(36, 36, 36, 0.445);
+  padding: 20px;
+  border-radius: 8px;
+  width: auto;
+  max-width: 300px;
+  height: auto;
+  max-height: calc(100vh - 40px);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  z-index: 1;
+  backdrop-filter: blur(10px);
+}
+
+.modal-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+  background-color: rgba(36, 36, 36, 0.445);
+  backdrop-filter: blur(10px);
+}
+
+.button-row {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+}
+.button-text{
+  padding:10px;
+  color:white;
+}
+.time-buttons button {
+margin-left:5px;
+margin-right: 5px;
+}
+.color-buttons button{
+  margin-left:15px;
+  margin-right: 15px;
+}
+.operation-buttons button{
+  margin-left:20px;
+  margin-right: 20px;
+}
+.button-row button {
+  padding: 10px 20px;
+  transition: background-color 0.3s;
+}
+
+button.verde {
+  background-color: #28a745;
+}
+.custom-checkbox {
+  position: relative;
+  display: inline-block;
+  cursor: pointer;
+}
+
+.checkbox-circle {
+  width: 30px;
+  height: 30px;
+  border: 2px solid #ccc;
+  border-radius: 50%;
+  position: relative;
+  background-color: #fff;
+}
+
+.tick,
+.cross {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: white;
+  font-size: 20px;
+  visibility: hidden;
+}
+
+.custom-checkbox.custom-checked .checkbox-circle {
+  background-color: green;
+  border-color: green;
+}
+
+.custom-checkbox.custom-checked .tick {
+  visibility: visible;
+}
+
+.custom-checkbox:not(.custom-checked) .cross {
+  visibility: visible;
+  transform: translate(-50%, -50%);
+  color: white;
+}
+
+.custom-checkbox:not(.custom-checked) .checkbox-circle {
+  background-color: red;
+  border-color: red;
+}
+
+input[type="checkbox"] {
+  display: none;
+}
+
+@media (max-width: 768px) {
+  /*
+  .content {
+    padding: 0.5rem;
+  }*/
+
+  .button {
+    padding: 0.25rem;
+    margin-left:5px;
+  }
+
+  .resultList {
+    margin-top: 0.5rem;
+  }
+
+  .listaAmigosTitle:nth-of-type(1) {
+    margin-bottom: 30px;
+  }
+
+  .resultItem {
+    padding: 0.5rem;
+  }
+
+  .userAvatar {
+    width: 40px;
+    height: 40px;
+  }
+
+}

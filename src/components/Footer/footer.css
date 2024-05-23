@@ -1,0 +1,35 @@
+/* Estilos CSS para el Footer */
+.footer {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    background-color: rgba(7, 7, 7, 0.2);
+    color: white;
+    text-align: center;
+    padding: 10px 0;
+  }
+  .footer svg{
+    width:18px;
+    height:auto;
+  }
+  .footer a:hover {
+    transition: 0.5s;
+    color: #2e2e2e;
+  }
+  
+  .social-links {
+    display: inline-block;
+    margin-bottom:10px;
+  }
+  
+  .social-links a {
+    color: #ffffff;
+    margin: 0 10px;
+    text-decoration: none;
+  }
+  
+  .social-links a i {
+    margin-right: 5px;
+  }
+  

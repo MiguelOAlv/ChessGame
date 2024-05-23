@@ -1,0 +1,63 @@
+@import './constants.css';
+@import url('https://fonts.googleapis.com/css2?family=Sofia+Sans&display=swap');
+
+html,body {
+  margin: 0;
+  padding: 0;
+  background-image: url('./assets/fondoAjedrez.jpg');
+  background-size: cover;
+  font-family: 'Sofia Sans', sans-serif;
+}
+body::-webkit-scrollbar{
+  width:15px;
+  border-radius:10px;
+  background: rgba(2, 2, 2, 0.8);
+}
+body::-webkit-scrollbar-thumb{
+  background: rgba(99, 99, 99, 1);
+  border-radius:10px;
+}
+
+button {
+  background: var(--dark-tile);
+  color: var(--light-tile);
+  border: 0 none;
+  padding: 10px 30px;
+  margin: 10px 0;
+  font-size: 1.1em;
+}
+
+@media (max-width: 767px) {
+  .App {
+    grid-template-columns: auto;
+  }
+  button{
+  padding:0px;
+  }/*
+  .container-fluid {
+    margin-left: 15px;
+  }*/
+  .html{
+    background-position: center;
+  }
+  .btn{
+    font-size: small;
+  }
+  .toggleButton.btnSideMenu {
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    z-index: 999;
+    width:75px;
+    visibility: visible;
+  }
+  .error {
+    font-size:12px;
+  }
+  .success{
+    font-size:12px;
+  }
+  .stats-circle > div {
+    margin-bottom: 10px;
+  }
+}

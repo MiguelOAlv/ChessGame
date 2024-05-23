@@ -1,0 +1,42 @@
+.moves-list {
+    display: flex;
+    flex-direction: row;
+    color: var(--dark-tile);
+    flex: 1 1;
+    flex-wrap: wrap;
+    align-content: start;
+    overflow: auto;
+    font-size: 1.1em;
+}
+
+.moves-list::-webkit-scrollbar {
+    width: 15px;
+    border-radius: 10px;
+    background: rgba(2, 2, 2, 0.8);
+}
+
+.moves-list::-webkit-scrollbar-thumb {
+    background: rgba(99, 99, 99, 1);
+    border-radius: 10px;
+}
+
+.moves-list div {
+    flex-basis: 35%;
+    padding-left: 15%;
+    text-align: left;
+    position: relative;
+    padding-bottom: 5px;
+}
+
+.moves-list div[data-number]:nth-child(odd)::before {
+    content: attr(data-number);
+    position: absolute;
+    left: 0;
+    opacity: 0.5;
+}
+@media (max-width: 768px) {
+    .moves-list div{
+        margin-left:5px;
+        max-width: 500px;
+    }
+}

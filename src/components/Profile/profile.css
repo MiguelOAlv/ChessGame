@@ -1,0 +1,77 @@
+.form-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .perfil{
+  border: 2px solid white;
+  }
+  .stats{
+    border: 2px solid white;
+  }
+  .stats-title{
+    font-size: 30px;
+  }
+  h5{
+    color:rgb(255, 255, 255);
+  }
+  .error-message {
+    color: red;
+    display:flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .success-message {
+    color: green;
+    display:flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .resultadoStatsItem{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 1rem;
+    margin-bottom:1rem;
+    border: 2px solid #ffffff;
+    border-radius: 5px;
+    backdrop-filter: blur(3px);
+    background-color: rgba(20, 20, 20, 0.8);
+  }
+  .stats-circle {
+    font-size: 20px;
+  }
+  .stats-circle-victorias{
+    color:#6c8d6c;
+    height: 50px;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .stats-circle-derrotas{
+    color:#996666;
+    height: 50px;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .stats-circle-empates{
+    color:#666666;
+    height: 50px;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .stats-circle-puntuacion{
+    color:white;
+    height: 50px;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  svg path:hover {
+    opacity: 0.6;
+    transition: 0.3s;
+}

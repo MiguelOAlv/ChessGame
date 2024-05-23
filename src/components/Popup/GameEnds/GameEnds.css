@@ -1,0 +1,15 @@
+.wins {
+    height: var(--tile-size);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+.wins.Blancas {background-image: url('../../../assets/wk.png');}
+.wins.Negras {background-image: url('../../../assets/bk.png');}
+.empate {
+    height: var(--tile-size);
+    background-size: contain;
+    background-repeat: no-repeat, no-repeat;
+    background-position: 35% center,65% center;
+    background-image: url('../../../assets/wk.png'),url('../../../assets/bk.png')
+}
