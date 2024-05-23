@@ -12,7 +12,7 @@ Para hacer uso de la VERSIÓN DEMO es necesario activar en:
 <li>Firefox:</li>
 <p style="color:red;">about://config --> privacy.file_unique_origin --> FALSE </p>
 <li>Edge:</li>
-<a style="color:red;">edge://flags --> block insecure private network requests --> DISABLED </a>
+<p style="color:red;">edge://flags --> block insecure private network requests --> DISABLED </p>
 </ul>
 
 **VERSIÓN DEMO:** --> [ChessGame](https://chessg4me.000webhostapp.com) <--
