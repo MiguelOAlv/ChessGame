@@ -6,12 +6,14 @@
 
 Para hacer uso de la VERSIÓN DEMO es necesario activar en:
 
-Chrome:
+<ul>
+<li>Chrome:</li>
 <p style="color:red;">chrome://flags --> allow invalid resources from localhost --> ENABLED </p>
-Firefox:
+<li>Firefox:</li>
 <p style="color:red;">about://config --> privacy.file_unique_origin --> FALSE </p>
-Edge:
+<li>Edge:</li>
 <p style="color:red;">edge://flags --> block insecure private network requests --> DISABLED </p>
+</ul>
 
 **VERSIÓN DEMO:** --> [ChessGame](https://chessg4me.000webhostapp.com) <--
 
