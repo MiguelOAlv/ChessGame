@@ -3,7 +3,7 @@
 ## Plataforma para jugar al ajedrez por correspondencia (React + JS + PHP)
 
 <div style="text-align: center;">
-![Pantalla de Inicio](src/assets/inicio.png)
+![Pantalla de Inicio](src/assets/inicio.PNG)
 </div>
 
 Para hacer uso de la VERSIÓN DEMO es necesario activar en:
@@ -18,7 +18,7 @@ Edge:
 **VERSIÓN DEMO:** --> [ChessGame](https://chessg4me.000webhostapp.com) <--
 
 <div style="text-align: center;">
-![Partida](src/assets/partida.png)
+![Partida](src/assets/partida.PNG)
 </div>
 
 Para iniciar el proyecto en local es necesario:
