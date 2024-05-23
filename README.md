@@ -29,4 +29,6 @@ Importar chessdb.sql
 
 **Nota:** Modificar get_connection() para que apunte a tu base de datos (user,pass,params,etc) en el api.php y las rutas en Services/ApiService.js
 
+![image](https://github.com/MiguelOAlv/ChessGame/src/assets/inicio.jpg)
+
 Leer el manual de usuario para el uso correcto de la aplicación. Si tiene alguna pregunta o sugerencia sobre la aplicación, pongase en contacto conmigo en la siguiente dirección de correo electrónico: micckey1198@gmail.com
